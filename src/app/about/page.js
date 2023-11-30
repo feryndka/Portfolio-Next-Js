@@ -25,8 +25,8 @@ export default function About() {
                         that lie ahead in the IT field.
                     </p>
                     <p className='paragraf-content p-5 font-serif text-gray-400'>
-                        Feel free to connect with me if you share similar interests or if you'd like 
-                        to discuss anything related to technology and IT. I'm always open to new ideas and collaborations!
+                        Feel free to connect with me if you share similar interests or if you like 
+                        to discuss anything related to technology and IT. I am always open to new ideas and collaborations!
                     </p>
                 </div>
             </div>
