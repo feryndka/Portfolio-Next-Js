@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar"
+import Particle from "@/components/particle";
 import Button from '@mui/material/Button';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <Particle />
       <div className="hero h-screen">
         <div className="page1" id='home'>
           <h1 className='text-[100px] font-semibold'>Fery <span style={{color:'cyan'}}>Andika</span>, <br />Fullstack Web <br />Developer</h1>

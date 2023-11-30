@@ -306,7 +306,6 @@ nav ul li:focus {
   nav .iconDensity {
     cursor: pointer;
     display: flex;
-    margin-right: 10%;
   }
 
   nav .iconDensity:hover {
