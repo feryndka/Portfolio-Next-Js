@@ -433,7 +433,7 @@ nav ul li:hover {
 
   /* Page 4 Start */
   .contact .contactList {
-    bottom: 1rem;
+    bottom: 0;
     left: 25%;
     right: 25%;
     justify-content: center;
