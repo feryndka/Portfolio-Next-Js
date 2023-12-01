@@ -4,10 +4,10 @@ export default function About() {
     return (
         <>
             <Navbar />
-            <div className='page2 grid grid-cols-2 gap-10 h-screen'>
-                <div className='page2-content font-bold mx-8 my-24'>
-                    <div className="line2"></div>
+            <div className='page2 h-screen'>
+                <div className='page2-content font-bold '>
                     A Passionate Web Developer.
+                    <div className="line2"></div>
                 </div>
                 <div className='paragraf'>
                     <p className='paragraf-content p-5 font-serif text-gray-400'>

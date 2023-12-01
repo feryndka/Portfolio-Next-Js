@@ -12,8 +12,7 @@ export default function Particle() {
 
     return (
         <Particles
-            className="w-full h-full absolute translate-z-0"
-            id='tsparticles' 
+            className="w-full h-full absolute translate-z-0" 
             init={particlesInit} 
             loaded={particlesLoaded} 
             options={{
