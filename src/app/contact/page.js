@@ -1,10 +1,13 @@
 import Navbar from "@/components/navbar"
 import Particle from "@/components/particle";
 import TelegramIcon from '@mui/icons-material/Telegram';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Contact() {
     return (
-        <>
+        <div className="contact">
             <Navbar />
             <Particle />
             <div className='page4 h-screen flex justify-center items-center'>
@@ -31,6 +34,11 @@ export default function Contact() {
                     </form>
                 </div>
             </div>
-        </>
+            <div className="contactList">
+                <a href="mailto:feryandika151@gmail.com"><EmailIcon sx={{ fontSize: 30 }}/></a>
+                <a href="https://www.linkedin.com/in/feryandika/"><LinkedInIcon sx={{ fontSize: 30 }}/></a>
+                <a href="https://github.com/feryndka"><GitHubIcon sx={{ fontSize: 30 }}/></a>
+            </div>
+        </div>
     )
 }
