@@ -41,7 +41,7 @@ export default function Particle() {
                         },
                         repulse: {
                             distance: 200,
-                            duration: 0.4,
+                            duration: 0.5,
                         }
                     }
                 },
@@ -50,8 +50,8 @@ export default function Particle() {
                         value: '#fff'
                     },
                     links: {
-                        color: '#00FFFF',
-                        distance: 150,
+                        color: '#00dc93',
+                        distance: 200,
                         enable: true,
                         opacity: 0.5,
                         width: 1
@@ -72,9 +72,9 @@ export default function Particle() {
                     number: {
                         density: {
                             enable: true,
-                            area: 800
+                            area: 900
                         },
-                        value: 80
+                        value: 70
                     },
                     opacity: {
                         value: 0.5,

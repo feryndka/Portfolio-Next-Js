@@ -12,7 +12,7 @@ export default function Home() {
       <Particle />
       <div className="hero h-screen">
         <div className="page1" id='home'>
-          <h1 className='text-[13vh] font-semibold'>Fery Andika<span style={{color:'cyan'}}>,</span> <br />Fullstack Web <br />Developer</h1>
+          <h1 className='text-[13vh] font-semibold'>Fery <span style={{color:'#00dc93'}}>Andika</span>, <br />Fullstack Web <br />Developer</h1>
           <div className="line"></div>
           <div className='btnpg1 my-5'>
             <Link href="/about">

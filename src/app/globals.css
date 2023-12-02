@@ -8,14 +8,14 @@
 }
 
 body {
-  background-color: #1E1E1E;
+  background-color: #0e0e0e;
 }
 
 nav {
   position: fixed;
   width: 100%;
   display: flex;
-  background-color: #1E1E1E;
+  background-color: #0e0e0e;
   justify-content: space-between;
   color: #e7e7e7;
   height: 50px;
@@ -34,7 +34,7 @@ nav .logo, footer div a .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1E1E1E;
+  color: #0e0e0e;
   background-color: #e7e7e7;
   width: 30px;
   height: 30px;
@@ -59,7 +59,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: cyan;
+  color: #00dc93;
   transition: .3s;
 }
 
@@ -75,7 +75,7 @@ nav ul li:hover {
 .hero div .line {
   width: 45%;
   height: 3px;
-  background-color: cyan;
+  background-color: #00dc93;
 }
 
 .hero div .btnpg1 {
@@ -115,7 +115,7 @@ nav ul li:hover {
 .line2 {
   width: 60%;
   height: 5px;
-  background-color: cyan;
+  background-color: #00dc93;
 }
 
 .page2-content {
@@ -124,23 +124,23 @@ nav ul li:hover {
 }
 
 .paragraf-content span {
-  color: cyan;
+  color: #00dc93;
 }
 
 .page4 .card {
-  box-shadow: 0 0 6px 6px cyan;
--webkit-box-shadow: 0 0 6px 6px cyan;
--moz-box-shadow: 0 0 6px 6px cyan;
+  box-shadow: 0 0 6px 6px #00dc93;
+-webkit-box-shadow: 0 0 6px 6px #00dc93;
+-moz-box-shadow: 0 0 6px 6px #00dc93;
   background: transparent;
   backdrop-filter: blur(5px);
 }
 
 .page4 h2 {
-  color: cyan;
+  color: #00dc93;
 }
 
 .page4 form div input, .page4 form div textarea {
-  background-color: #1E1E1E;
+  background-color: #0e0e0e;
 }
 
 .page4 form div input, .page4 form div textarea {
@@ -148,17 +148,17 @@ nav ul li:hover {
 }
 
 .page4 form div input:focus, .page4 form div textarea:focus {
-  border: 1px solid cyan;
+  border: 1px solid #00dc93;
 }
 
 .page4 form div button {
-  border: 1px solid cyan;
-  color: cyan;
+  border: 1px solid #00dc93;
+  color: #00dc93;
   width: 100%;
 }
 
 .page4 form div button:hover {
-  background-color:cyan;
+  background-color:#00dc93;
   transition: .3s;
   color: black;
 }
@@ -181,7 +181,7 @@ nav ul li:hover {
 }
 
 .contact .contactList a:hover {
-  color: cyan;
+  color: #00dc93;
 }
 
 /* Responsive Breakpoint */
@@ -194,13 +194,13 @@ nav ul li:hover {
   }
 
   nav .iconDensity:hover {
-    color: cyan;
+    color: #00dc93;
   }
 
   nav ul {
     position:absolute;
     flex-direction: column;
-    background-color: #1E1E1E;
+    background-color: #0e0e0e;
     top: 0;
     width: 100%;
     margin-top: 40px;
@@ -275,13 +275,13 @@ nav ul li:hover {
   }
 
   nav .iconDensity:hover {
-    color: cyan;
+    color: #00dc93;
   }
 
   nav ul {
     position:absolute;
     flex-direction: column;
-    background-color: #1E1E1E;
+    background-color: #0e0e0e;
     top: 0;
     width: 100%;
     margin-top: 40px;
@@ -355,13 +355,13 @@ nav ul li:hover {
   }
 
   nav .iconDensity:hover {
-    color: cyan;
+    color: #00dc93;
   }
 
   nav ul {
     position:absolute;
     flex-direction: column;
-    background-color: #1E1E1E;
+    background-color: #0e0e0e;
     top: 0;
     width: 100%;
     margin-top: 40px;

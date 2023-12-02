@@ -8,7 +8,7 @@ export default function Tools() {
             <section className="text-gray-600 body-font h-screen" id='tools'>
                 <div className="container pt-[5%] mx-auto">
                     <div className="flex flex-col text-start w-full mb-10">
-                        <h1 className="text-[90px] font-bold title-font mb-4 text-white tracking-widest underline underline-offset-[20px] decoration-[cyan]">Tools</h1>
+                        <h1 className="text-[90px] font-bold title-font mb-4 text-white tracking-widest underline underline-offset-[20px] decoration-[#00dc93]">Tools</h1>
                     </div>
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4 lg:w-1/2">
