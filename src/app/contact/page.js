@@ -1,16 +1,16 @@
-import Navbar from "@/components/navbar"
 import Particle from "@/components/particle";
 import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+import "./style.css"
+
 export default function Contact() {
     return (
         <div className="contact">
-            <Navbar />
             <Particle />
-            <div className='page4 h-screen flex items-center'>
+            <div className='page4 h-[92vh] flex items-center'>
                 <div className='card max-w-md w-4/5 mx-auto p-6 rounded-lg shadow-md'>
                     <h2 className='text-3xl text-center font-bold mb-6 underline underline-offset-8'>Contact Me</h2>
                     <form action="" method=''>

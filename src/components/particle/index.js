@@ -8,13 +8,13 @@ export default function Particle() {
         await loadFull(engine)
     }, [])
 
-    const particlesLoaded = useCallback(async () => {}, [])
+    const particlesLoaded = useCallback(async () => { }, [])
 
     return (
         <Particles
-            className="w-full h-full absolute translate-z-0" 
-            init={particlesInit} 
-            loaded={particlesLoaded} 
+            className="w-full h-[92vh] absolute translate-z-0"
+            init={particlesInit}
+            loaded={particlesLoaded}
             options={{
                 fullScreen: { enable: false },
                 background: {
@@ -50,7 +50,7 @@ export default function Particle() {
                         value: '#fff'
                     },
                     links: {
-                        color: '#00dc93',
+                        color: '#fff',
                         distance: 250,
                         enable: true,
                         opacity: 0.5,
@@ -74,7 +74,7 @@ export default function Particle() {
                             enable: true,
                             area: 900
                         },
-                        value: 70
+                        value: 30
                     },
                     opacity: {
                         value: 0.5,
@@ -83,11 +83,11 @@ export default function Particle() {
                         type: 'circle'
                     },
                     size: {
-                        value: {min: 1, max: 5},
+                        value: { min: 1, max: 5 },
                     },
                 },
                 detectRetina: true,
-            }} 
+            }}
         />
-    ) 
+    )
 }

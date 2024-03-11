@@ -1,6 +1,6 @@
 import { Roboto } from 'next/font/google'
-import Head from 'next/head'
 import './globals.css'
+import Navbar from '@/components/navbar'
 
 const roboto = Roboto({
   weight: '500',
@@ -16,8 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={roboto.className}>
-      <link rel="icon" href="/headIcon.png" sizes="any"/>
-      <body>{children}</body>
+      <link rel="icon" href="/headIcon.png" sizes="any" />
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

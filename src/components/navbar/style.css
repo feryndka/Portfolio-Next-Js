@@ -1,0 +1,136 @@
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: #0e0e0e;
+  justify-content: space-between;
+  color: #e7e7e7;
+  height: 8vh;
+  align-items: center;
+  z-index: 1;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+nav .iconDensity {
+  display: none;
+}
+
+nav .logo, footer div a .logo {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e0e0e;
+  background-color: #e7e7e7;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 100%;
+}
+
+nav .logo:hover, footer div a .logo {
+  cursor:context-menu;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+
+/* Responsive Breakpoint */
+/* Screen Laptop */
+@media screen and (max-width: 1024px) {
+  nav .iconDensity {
+    cursor: pointer;
+    display: flex;
+    margin-right: 20px;
+  }
+
+  nav .iconDensity:hover {
+    color: #00dc93;
+  }
+
+  nav ul {
+    position:absolute;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    top: 0;
+    width: 100%;
+    margin-top: 40px;
+    height: 30vh;
+    justify-content: space-around;
+    z-index: -1;
+    transition: all 1s;
+  }
+
+  nav ul.visible {
+    transform: translateY(-150%);
+  }
+}
+
+/* Screen Tablet */
+@media screen and (max-width: 768px) {
+  nav .iconDensity {
+    cursor: pointer;
+    display: flex;
+    margin-right: 20px;
+  }
+
+  nav .iconDensity:hover {
+    color: #00dc93;
+  }
+
+  nav ul {
+    position:absolute;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    top: 0;
+    width: 100%;
+    margin-top: 40px;
+    height: 30vh;
+    justify-content: space-around;
+    z-index: -1;
+    transition: all 1s;
+  }
+
+  nav ul.visible {
+    transform: translateY(-150%);
+  }
+}
+
+/* Screen Mobile */
+@media screen and (max-width: 576px) {
+  nav .iconDensity {
+    cursor: pointer;
+    display: flex;
+  }
+
+  nav .iconDensity:hover {
+    color: #00dc93;
+  }
+
+  nav ul {
+    position:absolute;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    top: 0;
+    width: 100%;
+    margin-top: 40px;
+    height: 30vh;
+    justify-content: space-around;
+    z-index: -1;
+    transition: all 1s;
+  }
+
+  nav ul.visible {
+    transform: translateY(-150%);
+  }
+}

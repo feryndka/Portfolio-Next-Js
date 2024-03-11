@@ -1,0 +1,71 @@
+.page4 .card {
+  box-shadow: 0 0 6px 6px #e7e7e7;
+-webkit-box-shadow: 0 0 6px 6px #e7e7e7;
+-moz-box-shadow: 0 0 6px 6px #e7e7e7;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.page4 h2 {
+  color: #e7e7e7;
+}
+
+.page4 form div input, .page4 form div textarea {
+  background-color: #0e0e0e;
+}
+
+.page4 form div input, .page4 form div textarea {
+  color: #e7e7e7;
+}
+
+.page4 form div input:focus, .page4 form div textarea:focus {
+  border: 1px solid #e7e7e7;
+}
+
+.page4 form div button {
+  border: 1px solid #e7e7e7;
+  color: #e7e7e7;
+  width: 100%;
+}
+
+.page4 form div button:hover {
+  background-color:#e7e7e7;
+  transition: .3s;
+  color: black;
+}
+
+.contact .contactList {
+  position: fixed;
+  border: 1px solid white;
+  right: 10px;
+  bottom:40%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+.contact .contactList a {
+  color: white;
+  padding: 20px;
+}
+
+.contact .contactList a:hover {
+  color: #e7e7e7;
+}
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 576px) {
+  .contact .contactList {
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+    background:none;
+    backdrop-filter: unset;
+  }
+}
