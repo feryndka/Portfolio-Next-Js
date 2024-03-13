@@ -1,29 +1,31 @@
 .head {
- @apply h-[92vh] md:grid md:grid-cols-2 
+  @apply h-screen md:grid md:grid-cols-2 mt-20 md:mt-0;
 }
 
 .grid-1 {
-  @apply flex justify-center items-center 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-grid-1 {
- @apply h-[80%] w-[80%] items-center justify-center flex 
+  @apply h-[80%] w-[80%] items-center justify-center flex;
 }
 
 .image {
- @apply relative
+  position: relative;
 }
 
 .grid-2 {
- @apply py-10 md:pe-20 px-5 flex flex-col justify-center 
+  @apply py-10 md:pe-20 px-5 flex flex-col justify-center;
 }
 
 .title {
-  @apply font-bold text-4xl text-center md:text-start
+  @apply font-bold text-4xl text-center md:text-start;
 }
 
 .line-2 {
-  @apply h-1 my-4 bg-[#e7e7e7]
+  @apply h-1 my-4 bg-[#e7e7e7];
 }
 
 .paragraf {
@@ -31,5 +33,7 @@
 }
 
 .paragraf p {
-  @apply pb-10 font-serif text-gray-400
+  padding-bottom: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: darkgray;
 }

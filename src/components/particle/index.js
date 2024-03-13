@@ -12,7 +12,7 @@ export default function Particle() {
 
     return (
         <Particles
-            className="w-full h-[92vh] absolute translate-z-0"
+            className="w-full h-full absolute translate-z-0"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{

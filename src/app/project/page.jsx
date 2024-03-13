@@ -56,7 +56,7 @@ const Project = () => {
 
   return (
     <>
-      <HeroParallax products={products} />;
+      <HeroParallax products={products} />
     </>
   )
 }

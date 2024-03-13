@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="h-[92vh] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-screen w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
       <Particle />
       <h1 className="md:text-5xl text-3xl lg:text-8xl font-bold text-center relative z-20">
         Fery Andika <br /> Frontend Web Developer
