@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "src": "/icon/JavaScript.png",
+    "title": "Javascript",
+    "level": "Basic",
+    "experience": "3 Month"
+  },
+  {
+    "id": 2,
+    "src": "/icon/react.png",
+    "title": "React Js",
+    "level": "Basic",
+    "experience": "3 Month"
+  },
+  {
+    "id": 3,
+    "src": "/icon/next.png",
+    "title": "Next Js",
+    "level": "Basic",
+    "experience": "3 Month"
+  },
+  {
+    "id": 4,
+    "src": "/icon/html.png",
+    "title": "HTML",
+    "level": "Basic",
+    "experience": "2 Years"
+  },
+  {
+    "id": 5,
+    "src": "/icon/css.png",
+    "title": "CSS",
+    "level": "Basic",
+    "experience": "2 Years"
+  },
+  {
+    "id": 6,
+    "src": "/icon/tailwind.jfif",
+    "title": "Tailwind CSS",
+    "level": "Basic",
+    "experience": "3 Month"
+  }
+]

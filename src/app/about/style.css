@@ -1,5 +1,5 @@
 .head {
-  @apply h-screen md:grid md:grid-cols-2 mt-20 md:mt-0;
+  @apply h-fit md:grid md:grid-cols-2 mt-20 md:mt-0;
 }
 
 .grid-1 {
@@ -9,7 +9,7 @@
 }
 
 .sub-grid-1 {
-  @apply h-[80%] w-[80%] items-center justify-center flex;
+  @apply h-fit w-fit items-center justify-center flex;
 }
 
 .image {

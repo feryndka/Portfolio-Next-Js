@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "src": "/icon/JavaScript.png",
+    "title": "Javascript",
+    "level": "Basic",
+    "experience": "3 Month"
+  },
+  {
+    "id": 2,
+    "src": "/icon/typescript.png",
+    "title": "Typescript",
+    "level": "Basic",
+    "experience": "2 Month"
+  },
+  {
+    "id": 3,
+    "src": "/icon/node.png",
+    "title": "Node Js",
+    "level": "Basic",
+    "experience": "3 Month"
+  },
+  {
+    "id": 4,
+    "src": "/icon/express.png",
+    "title": "Express Js",
+    "level": "Basic",
+    "experience": "3 Month"
+  }
+]

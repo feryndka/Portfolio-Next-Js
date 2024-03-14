@@ -8,23 +8,19 @@ export default function Navbar() {
         },
         {
             name: "About",
-            link: "/about",
+            link: "#about",
         },
-        // {
-        //     name: "Skill",
-        //     link: "/skill",
-        // },
         {
-            name: "Tools",
-            link: "/tools",
+            name: "Skill",
+            link: "#skill",
         },
         {
             name: "Project",
-            link: "/project",
+            link: "#project",
         },
         {
             name: "Contact",
-            link: "/contact",
+            link: "#contact",
         },
     ]
 

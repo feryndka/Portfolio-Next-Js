@@ -1,58 +1,53 @@
-.page4 .card {
+.card {
   box-shadow: 0 0 6px 6px #e7e7e7;
 -webkit-box-shadow: 0 0 6px 6px #e7e7e7;
 -moz-box-shadow: 0 0 6px 6px #e7e7e7;
-  background: transparent;
-  backdrop-filter: blur(5px);
 }
 
-.page4 h2 {
+h2 {
   color: #e7e7e7;
 }
 
-.page4 form div input, .page4 form div textarea {
+form div input, form div textarea {
   background-color: #0e0e0e;
 }
 
-.page4 form div input, .page4 form div textarea {
+form div input, form div textarea {
   color: #e7e7e7;
 }
 
-.page4 form div input:focus, .page4 form div textarea:focus {
+form div input:focus, form div textarea:focus {
   border: 1px solid #e7e7e7;
 }
 
-.page4 form div button {
+form div button {
   border: 1px solid #e7e7e7;
   color: #e7e7e7;
   width: 100%;
 }
 
-.page4 form div button:hover {
+form div button:hover {
   background-color:#e7e7e7;
   transition: .3s;
   color: black;
 }
 
 .contact .contactList {
-  position: fixed;
-  border: 1px solid darkgray;
-  right: 10px;
-  bottom:40%;
   display: flex;
-  flex-direction: column;
-  background: transparent;
-  backdrop-filter: blur(10px);
-  border-radius: 30px;
+  justify-content: space-between;
 }
 
 .contact .contactList a {
   color: #e7e7e7;
-  padding: 20px;
+  padding: 10px;
+  margin: 20px 20px 0 20px;
+  border: 1px solid darkgray;
+  border-radius: 9999px;
 }
 
 .contact .contactList a:hover {
-  color:darkgray;
+  color:black;
+  background-color: white;
 }
 
 /* Responsive Breakpoint */

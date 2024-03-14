@@ -1,18 +1,12 @@
 "use client";
-import React, { useState } from "react";
 import {
   motion,
   AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "../utils/cn";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export const FloatingNav = ({ navItems, className }) => {
-  const pathname = usePathname();
-  
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -29,21 +23,8 @@ export const FloatingNav = ({ navItems, className }) => {
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600"
             )}
           >
-            <button
-              className={`${
-                pathname === navItem.link
-                  ? "border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] dark:text-white px-4 py-2 rounded-full"
-                  : "text-sm font-medium relative dark:text-white px-4 py-2 dark:hover:text-neutral-300 hover:text-neutral-500"
-              }`}
-            >
+            <button className={"text-sm font-medium relative dark:text-white px-4 py-2 dark:hover:text-neutral-300 hover:text-neutral-500"}>
               <span className="sm:block text-sm">{navItem.name}</span>
-              <span
-                className={`${
-                  pathname === navItem.link
-                    ? "absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-px"
-                    : null
-                }`}
-              />
             </button>
           </Link>
         ))}

@@ -55,9 +55,9 @@ const Project = () => {
   ];
 
   return (
-    <>
+    <div id="project">
       <HeroParallax products={products} />
-    </>
+    </div>
   )
 }
 

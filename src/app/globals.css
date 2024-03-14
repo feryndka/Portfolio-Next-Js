@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-[#0e0e0e] text-[#e7e7e7] scroll-smooth
+  @apply bg-[#0e0e0e] text-[#e7e7e7]
 }

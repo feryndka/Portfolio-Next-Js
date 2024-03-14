@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div className='head'>
+        <div className='head' id='about'>
             <div className='grid-1'>
                 <div className="sub-grid-1">
                     <div className="image">
