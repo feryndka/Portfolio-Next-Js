@@ -18,10 +18,10 @@ export default function Navbar() {
             name: "Project",
             link: "#project",
         },
-        {
-            name: "Contact",
-            link: "#contact",
-        },
+        // {
+        //     name: "Contact",
+        //     link: "#contact",
+        // },
     ]
 
     return (

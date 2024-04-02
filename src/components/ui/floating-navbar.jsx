@@ -11,7 +11,7 @@ export const FloatingNav = ({ navItems, className }) => {
     <AnimatePresence mode="wait">
       <motion.div
         className={cn(
-          "flex max-w-fit fixed top-3 md:top-5 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-[#0e0e0e] bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2 items-center justify-center space-x-2",
+          "flex max-w-fit fixed top-3 md:top-5 inset-x-0 mx-auto border border-transparent rounded-full dark:bg-[#212121] bg-white shadow-[#e7e7e7_0px_0px_5px] z-[5000] px-8 py-2 items-center justify-center space-x-2",
           className
         )}
       >

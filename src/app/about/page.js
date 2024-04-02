@@ -10,7 +10,7 @@ export default function About() {
                     <div className="image">
                         <Image src={"/profile.png"} height={700} width={700} alt="profile"/>
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="h-full w-[80%] rounded-t-full shadow-inner shadow-[#e7e7e7]"></div>
+                            <div className="shadow-bg h-full w-[80%] rounded-lg"></div>
                         </div>
                     </div>
                 </div>
