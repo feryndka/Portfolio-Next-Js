@@ -1,5 +1,5 @@
 .head {
-  @apply h-fit md:grid md:grid-cols-2 py-10;
+  @apply h-fit md:grid md:grid-cols-2 py-24;
 }
 
 .grid-1 {
@@ -23,7 +23,7 @@
 }
 
 .grid-2 {
-  @apply py-10 md:pe-20 px-5 flex flex-col justify-center;
+  @apply pt-10 md:pe-20 px-5 flex flex-col justify-center;
 }
 
 .title {

@@ -4,7 +4,7 @@ export default function Navbar() {
     const list = [
         {
             name: "Home",
-            link: "/",
+            link: "#",
         },
         {
             name: "About",
@@ -14,10 +14,10 @@ export default function Navbar() {
             name: "Skill",
             link: "#skill",
         },
-        {
-            name: "Project",
-            link: "#project",
-        },
+        // {
+        //     name: "Project",
+        //     link: "#project",
+        // },
         // {
         //     name: "Contact",
         //     link: "#contact",
