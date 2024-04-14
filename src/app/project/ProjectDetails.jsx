@@ -189,7 +189,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             }}
             onClick={() => setOpenModal({ state: false, project: null })}
           />
-          <Image src={project?.image} width={500} height={500}/>
+          <Image alt="project" src={project?.image} width={500} height={500}/>
           <Title>{project?.title}</Title>
           <Date>{project.date}</Date>
           <Tags>
