@@ -47,7 +47,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="fixed" className="bg-[#212121]">
+    <AppBar position="fixed" color="transparent" className="bg-[#212121]">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -148,7 +148,12 @@ function Navbar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Avatar alt="Fery Andika" src="/headIcon.png" sx={{ p: 0 }} className="w-8 h-8" />
+            <Avatar
+              alt="Fery Andika"
+              src="/headIcon.png"
+              sx={{ p: 0 }}
+              className="w-8 h-8"
+            />
           </Box>
         </Toolbar>
       </Container>
