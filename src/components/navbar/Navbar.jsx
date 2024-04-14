@@ -47,7 +47,11 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="fixed" color="transparent" className="bg-[#212121]">
+    <AppBar
+      position="fixed"
+      color="transparent"
+      style={{ backgroundColor: "#212121"}}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
