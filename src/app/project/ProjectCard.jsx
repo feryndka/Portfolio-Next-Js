@@ -82,7 +82,7 @@ const Description = styled.div`
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <Card onClick={() => setOpenModal({ state: true, project: project })}>
-      <Image src={project.image} />
+      <Image src={project.image} width={500} height={500}/>
       <Tags>
         {project.tags?.map((tag, index) => (
           <Tag>{tag}</Tag>

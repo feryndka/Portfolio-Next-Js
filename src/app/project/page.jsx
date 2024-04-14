@@ -73,9 +73,10 @@ const Project = () => {
           Here are some of my projects.
         </Desc>
         <CardContainer>
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             return (
               <ProjectCard
+                key={index}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
