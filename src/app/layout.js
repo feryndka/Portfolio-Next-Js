@@ -1,6 +1,6 @@
 import { Roboto } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/navbar'
+import Navbar from '@/components/navbar/Navbar.jsx'
 
 const roboto = Roboto({
   weight: '500',

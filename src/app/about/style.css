@@ -1,25 +1,5 @@
 .head {
-  @apply h-fit md:grid md:grid-cols-2 py-24;
-}
-
-.grid-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sub-grid-1 {
-  @apply h-fit w-fit items-center justify-center flex;
-}
-
-.image {
-  position: relative;
-}
-
-.shadow-bg {
-  box-shadow: 0px 0px 10px 5px white;
--webkit-box-shadow: 0px 0px 10px 5px white;
--moz-box-shadow: 0px 0px 10px 5px white;
+  @apply h-fit md:grid md:grid-cols-2 py-16;
 }
 
 .grid-2 {
@@ -27,7 +7,7 @@
 }
 
 .title {
-  @apply font-bold text-4xl text-center md:text-start;
+  @apply font-bold text-4xl text-center md:text-start font-mono;
 }
 
 .line-2 {
@@ -42,4 +22,25 @@
   padding-bottom: 40px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: darkgray;
+}
+
+.custom-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape .shape-fill {
+  fill: #212121;
 }

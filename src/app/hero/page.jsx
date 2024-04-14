@@ -10,15 +10,15 @@ const Hero = () => {
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center overflow-hidden rounded-md bg-[#212121]">
       <Particle />
-      <h1 className="md:text-5xl text-3xl lg:text-8xl font-bold text-center relative z-20">
+      <h1 className="md:text-5xl text-3xl lg:text-8xl font-bold md:text-center relative z-20 font-serif">
         Fery Andika <br /> Web Developer
       </h1>
-      <div className="w-[40rem] relative mt-5 mb-10">
+      <div className="sm:w-[40rem] relative my-5 w-[30rem]">
         {/* Gradients */}
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-[2px] w-3/4 blur-sm" />
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-px w-3/4" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-[5px] w-1/4 blur-sm" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-px w-1/4" />
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-[2px] sm:w-3/4 blur-sm w-4/4" />
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-px sm:w-3/4 w-4/4" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-[5px] sm:w-1/4 blur-sm w-4/4" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#e7e7e7] to-transparent h-px sm:w-1/4 w-4/4" />
       </div>
       <div className="flex flex-col space-y-4 md:space-y-0 z-10 gap-3">
         <div className="flex flex-col md:flex-row gap-3">
