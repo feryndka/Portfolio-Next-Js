@@ -25,10 +25,10 @@ const pages = [
     name: "Skill",
     link: "#skill",
   },
-  // {
-  //   name: "Project",
-  //   link: "#project",
-  // },
+  {
+    name: "Project",
+    link: "#project",
+  },
   // {
   //     name: "Contact",
   //     link: "#contact",
@@ -144,7 +144,7 @@ function Navbar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, mx: 1, color: "white", display: "block" }}
                 href={page.link}
-                className="hover:bg-gray-500 text-center"
+                className="hover:bg-white/10 text-center"
               >
                 {page.name}
               </Button>
