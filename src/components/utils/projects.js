@@ -23,26 +23,23 @@ export const projects = [
     github: "https://github.com/feryndka/ToDo-App",
     webapp: "https://next-to-do-list-app.vercel.app",
   },
-  // {
-  //   id: 3,
-  //   title: "Dashboard Admin",
-  //   date: "Jan 2024 - Now",
-  //   description:
-  //     "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
-  //   image:
-  //     "/project/admin-dashboard.JPG",
-  //   tags: [
-  //     "React Js",
-  //     "Next Js",
-  //     "MySQL",
-  //     "Node Js",
-  //     "Express Js",
-  //     "Redux",
-  //     "React Flow",
-  //   ],
-  //   github: "https://github.com/rishavchanda/DecisionHub",
-  //   webapp: "https://decisionhub.netlify.app/",
-  // },
+  {
+    id: 3,
+    title: "Web Anime",
+    date: "Mar 2024 - Apr 2024",
+    description:
+      "Develop web anime with fetch api.",
+    image:
+      "/project/web-anime.JPG",
+    tags: [
+      "React Js",
+      "Next Js",
+      "Tailwind Css",
+      "API",
+    ],
+    github: "https://github.com/feryndka/web-anime",
+    webapp: "https://anime-idn.vercel.app",
+  },
   // {
   //   id: 4,
   //   title: "Coffee Shop",
