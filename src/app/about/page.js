@@ -2,7 +2,7 @@
 import './style.css'
 import styled from "styled-components";
 
-const HeroRightContainer = styled.div`
+const HeroLeftContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ const Img = styled.img`
   height: 100%;
   max-width: 400px;
   max-height: 450px;
-  border-radius: 60% 40% 60% 50%;
+  border-radius: 50%;
   background-color: #212121;
 
   @media (max-width: 768px) {
@@ -41,9 +41,9 @@ const Img = styled.img`
 const About = () => {
   return (
     <div className='head relative' id='about'>
-      <HeroRightContainer>
+      <HeroLeftContainer>
         <Img src={"/profile.png"} alt="hero-image" width={500} height={500} />
-      </HeroRightContainer>
+      </HeroLeftContainer>
       <div className='grid-2'>
         <div className='title'>
           A Passionate Web Developer.
