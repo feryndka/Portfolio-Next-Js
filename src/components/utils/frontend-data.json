@@ -33,12 +33,5 @@
     "title": "CSS",
     "level": "Basic",
     "experience": "2 Years"
-  },
-  {
-    "id": 6,
-    "src": "/icon/tailwind.jfif",
-    "title": "Tailwind CSS",
-    "level": "Basic",
-    "experience": "3 Month"
   }
 ]
