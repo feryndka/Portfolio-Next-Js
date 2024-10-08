@@ -26,5 +26,12 @@
     "title": "Express Js",
     "level": "Basic",
     "experience": "3 Month"
+  },
+  {
+    "id": 5,
+    "src": "/icon/laravel.jpg",
+    "title": "Laravel",
+    "level": "Basic",
+    "experience": "1 Month"
   }
 ]
