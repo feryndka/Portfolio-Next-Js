@@ -25,6 +25,7 @@ const Img = styled.img`
   max-width: 350px;
   max-height: 500px;
   border-radius: 20%;
+  border: 4px solid white;
   background-color: #212121;
   @media (max-width: 768px) {
     max-width: 300px;
