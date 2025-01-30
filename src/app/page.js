@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <Skill />
       <Project />
-      <Deepseek />
+      {/* <Deepseek /> */}
       {/* <Contact /> */}
     </>
   );
