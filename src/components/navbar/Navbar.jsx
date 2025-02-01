@@ -50,7 +50,7 @@ function Navbar() {
     <AppBar
       position="fixed"
       color="transparent"
-      style={{ backgroundColor: "#212121"}}
+      style={{ backgroundColor: "#212121" }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -58,7 +58,7 @@ function Navbar() {
             variant="h5"
             noWrap
             component="a"
-            href={"#"}
+            href={"/"}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
