@@ -3,7 +3,6 @@ import "./style.css";
 import styled from "styled-components";
 
 const HeroLeftContainer = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -42,7 +41,7 @@ const About = () => {
   return (
     <div className="head relative" id="about">
       <HeroLeftContainer>
-        <Img src={"/profile.png"} alt="hero-image" width={500} height={500} />
+        <Img src={"/profile.png"} alt="hero-image" />
       </HeroLeftContainer>
       <div className="grid-2">
         <div className="title">

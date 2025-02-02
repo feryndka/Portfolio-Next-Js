@@ -71,6 +71,23 @@ const Image = styled.img`
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 `;
 
+const Video = styled.video`
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+`;
+
+const VideoFrame = styled.iframe`
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+`;
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +155,13 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             }}
             onClick={() => setOpenModal({ state: false, project: null })}
           />
-          {project?.isDemo ? null : (
+          {project?.isDemo ? (
+            <VideoFrame
+              src={project?.demoapp}
+              allow="autoplay; fullscreen"
+              allowFullScreen
+            />
+          ) : (
             <Image
               alt="project"
               src={project?.image}

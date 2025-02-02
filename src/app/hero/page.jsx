@@ -30,25 +30,33 @@ const Hero = () => {
 
       <div className="flex flex-col lg:flex-row md:justify-between lg:items-center w-[70vw] z-10 gap-4">
         <div className="flex flex-col md:flex-row gap-3">
-          <a href="mailto:feryandika151@gmail.com">
-            <EmailIcon sx={{ fontSize: 30 }} /> feryandika151@gmail.com
-          </a>
-          <a href="https://www.linkedin.com/in/feryandika/">
-            <LinkedInIcon sx={{ fontSize: 30 }} /> Fery Andika
-          </a>
+          <Link href="mailto:feryandika151@gmail.com">
+            <div className="flex items-center gap-1">
+              <EmailIcon sx={{ fontSize: 30 }} /> feryandika151@gmail.com
+            </div>
+          </Link>
+          <Link href="https://www.linkedin.com/in/feryandika/">
+            <div className="flex items-center gap-1">
+              <LinkedInIcon sx={{ fontSize: 30 }} /> Fery Andika
+            </div>
+          </Link>
         </div>
         <div className="flex flex-row gap-3">
           <Link
             href="#about"
             className="flex justify-center items-center w-40 h-10 rounded-md border dark:border-[#e7e7e7] border-transparent text-[#e7e7e7] text-sm transition-all hover:bg-white/20"
           >
-            Read More <ExpandMoreIcon />
+            <div className="flex items-center gap-1">
+              Read More <ExpandMoreIcon />
+            </div>
           </Link>
           <Link
             href="https://t.me/feryndka"
             className="flex justify-center items-center w-40 h-10 rounded-xl bg-[#e7e7e7] text-black border border-black text-sm transition-all shadow-md hover:shadow-gray-500/50"
           >
-            Message <TelegramIcon />
+            <div className="flex items-center gap-1">
+              Message <TelegramIcon />
+            </div>
           </Link>
         </div>
       </div>
