@@ -1,46 +1,94 @@
-.head {
-  @apply h-fit md:grid md:grid-cols-2 py-16;
+/* Container utama untuk section 'About' */
+.about-section {
+  @apply min-h-screen bg-[#111111] text-white flex items-center justify-center py-24 px-4 sm:px-6 lg:px-8;
 }
 
-.grid-2 {
-  @apply pt-10 md:pe-20 px-5 flex flex-col justify-center;
+/* Wrapper untuk konten agar tidak terlalu lebar di layar besar */
+.container-content {
+  @apply container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20;
 }
 
+/* Container untuk gambar di sebelah kiri */
+.image-container {
+  @apply w-full max-w-sm md:w-1/3 flex justify-center;
+}
+
+/* Wrapper di dalam container gambar untuk efek visual */
+.image-wrapper {
+  @apply relative rounded-full p-1 overflow-hidden; /* Hapus padding lama & bg-gradient, tambahkan overflow-hidden */
+}
+
+/* Pseudo-element untuk gradien yang berputar */
+.image-wrapper::before {
+  content: "";
+  @apply absolute -top-1/2 -left-1/2 w-[200%] h-[200%];
+  background-image: conic-gradient(
+    transparent,
+    rgba(110, 231, 183, 1),
+    /* Warna Emerald */ rgba(59, 130, 246, 1),
+    /* Warna Biru */ transparent 30%
+  );
+  animation: spin 4s linear infinite;
+}
+
+/* Styling untuk gambar profil */
+.profile-image {
+  @apply relative w-full h-full max-w-[300px] md:max-w-full rounded-full border-4 border-transparent bg-[#111111] object-cover z-10; /* Ganti warna border dan bg */
+  aspect-ratio: 1/1; /* Memastikan gambar selalu bulat sempurna */
+}
+
+/* Container untuk teks di sebelah kanan */
+.text-container {
+  @apply md:w-2/3;
+}
+
+/* Judul section */
 .title {
-  @apply font-bold text-4xl text-center md:text-start font-mono;
+  @apply font-bold text-4xl md:text-5xl text-start font-mono bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-green-500;
 }
 
+/* Garis pemisah di bawah judul */
 .line-2 {
-  @apply h-1 my-4 bg-[#e7e7e7];
+  @apply h-1 my-4 bg-gradient-to-r from-emerald-500 to-green-600 w-24 rounded-full;
 }
 
+/* Styling untuk blok paragraf */
 .paragraf {
-  text-align: justify;
+  @apply space-y-4; /* Memberi jarak antar paragraf */
 }
 
 .paragraf p {
-  padding-bottom: 40px;
+  @apply text-slate-300 text-base md:text-lg leading-relaxed text-justify md:text-left;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: darkgray;
 }
 
+/* Styling untuk teks yang di-highlight */
+.highlight {
+  @apply font-semibold text-emerald-400;
+}
+
+/* Styling untuk SVG shape divider */
 .custom-shape {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  @apply absolute bottom-0 left-0 w-full overflow-hidden leading-none;
   transform: rotate(180deg);
 }
 
 .custom-shape svg {
-  position: relative;
-  display: block;
+  @apply relative block;
   width: calc(100% + 1.3px);
   height: 70px;
 }
 
 .custom-shape .shape-fill {
-  fill: #212121;
+  fill: #111111;
+}
+
+/* Animasi untuk efek putar pada gradien */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

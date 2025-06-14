@@ -3,35 +3,35 @@
     "id": 1,
     "src": "/icon/JavaScript.png",
     "title": "Javascript",
-    "level": "Basic",
-    "experience": "3 Month"
+    "level": "Intermediate",
+    "experience": "1 Year"
   },
   {
     "id": 2,
     "src": "/icon/react.png",
     "title": "React Js",
-    "level": "Basic",
-    "experience": "3 Month"
+    "level": "Intermediate",
+    "experience": "1 Year"
   },
   {
     "id": 3,
     "src": "/icon/next.png",
     "title": "Next Js",
-    "level": "Basic",
-    "experience": "3 Month"
+    "level": "Intermediate",
+    "experience": "1 Year"
   },
   {
     "id": 4,
     "src": "/icon/html.png",
     "title": "HTML",
-    "level": "Basic",
+    "level": "Advanced",
     "experience": "2 Years"
   },
   {
     "id": 5,
     "src": "/icon/css.png",
     "title": "CSS",
-    "level": "Basic",
+    "level": "Advanced",
     "experience": "2 Years"
   }
 ]

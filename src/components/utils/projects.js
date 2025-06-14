@@ -3,6 +3,7 @@ export const projects = [
     id: 1,
     title: "Company Profile",
     date: "Dec 2023",
+    category: "web app",
     description:
       "Developed a front-end website that containt landing page company profile, vission mission, history, our team, service, testimonials, etc...",
     image: "/project/company-profile.JPG",
@@ -22,6 +23,7 @@ export const projects = [
     id: 2,
     title: "To Do App",
     date: "Mar 2024",
+    category: "web app",
     description:
       "Developed to do app web that allows users to create list, mark if is done, and delete data.",
     image: "/project/Todo.JPG",
@@ -40,6 +42,7 @@ export const projects = [
     id: 3,
     title: "Web Anime",
     date: "Mar 2024 - Apr 2024",
+    category: "web app",
     description: "Develop web anime with fetch api.",
     image: "/project/web-anime.JPG",
     tags: ["React Js", "Next Js", "Tailwind Css", "API"],
@@ -51,6 +54,7 @@ export const projects = [
     id: 4,
     title: "Dashboard Admin",
     date: "Jan 2024 - Feb 2024",
+    category: "web app",
     description: "Build Dashboard admin with next Js 14, and database mysql.",
     image: "/project/admin-dashboard.JPG",
     tags: [
@@ -71,6 +75,7 @@ export const projects = [
     id: 5,
     title: "Rent Office",
     date: "Des 2024 - Jan 2025",
+    category: "web app",
     description:
       "This project is a web-based rental office platform that allows users to browse and book office spaces. The website provides detailed information about available offices, including location, facilities, pricing, and availability. Built with React and TypeScript, the frontend ensures a structured and maintainable user interface, styled with Tailwind CSS. The backend is developed using Laravel 11, which serves as an API provider for managing office data, city, and booking office. This system enables seamless interaction between users and office providers, making the rental process efficient and convenient.",
     image: "/project/rent-office.png",
@@ -94,6 +99,7 @@ export const projects = [
     id: 6,
     title: "AI Chat Generator",
     date: "Jan 2025",
+    category: "web app",
     description: "Build AI Chat Generator with Deepseek AI and ollama",
     image: "/project/ai-chat.png",
     tags: [

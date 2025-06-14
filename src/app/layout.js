@@ -1,17 +1,17 @@
-import { Roboto } from 'next/font/google'
-import './globals.css'
-import Navbar from '@/components/navbar/Navbar.jsx'
+import { Roboto } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/navbar/Navbar.jsx";
 
 const roboto = Roboto({
-  weight: '500',
-  subsets: ['latin'],
-  display: 'swap',
-})
+  weight: "500",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
-  title: 'Fery Andika | Web Developer',
-  description: 'Student Informatics',
-}
+  title: "Fery Andika | Web Developer",
+  description: "Student Informatics",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <div id="portal-root"></div>
       </body>
     </html>
-  )
+  );
 }

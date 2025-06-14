@@ -1,82 +1,78 @@
 "use client";
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import SkillCard from "./SkillCard";
 
 import frontend_data from "@/components/utils/frontend-data.json";
-import backend_data from "@/components/utils/backend-data.json"
+import backend_data from "@/components/utils/backend-data.json";
 
 export default function Skill() {
-  const [activeStep, setActiveStep] = useState(1);
+  const [activeTab, setActiveTab] = useState(1);
 
-  const handleStepClick = (step) => {
-    setActiveStep(step);
-  };
+  const tabs = [
+    { id: 1, label: "Frontend" },
+    { id: 2, label: "Backend" },
+  ];
 
-  const renderStepContent = () => {
-    switch (activeStep) {
-      case 1:
-        return (
-          <div className="grid lg:grid-cols-2 gap-10 md:w-[80%] w-full md:mx-auto">
-            {frontend_data.map((item, index) => {
-              return (
-                <SkillCard
-                  key={index}
-                  src={item.src}
-                  title={item.title}
-                  level={item.level}
-                  experience={item.experience}
+  const data = activeTab === 1 ? frontend_data : backend_data;
+
+  return (
+    <section className="min-h-screen bg-[#111111] text-white" id="skill">
+      <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col items-center">
+        {/* Judul Section */}
+        <h2 className="title text-4xl md:text-5xl font-bold font-mono mb-4 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-green-500">
+          My Tech Stack
+        </h2>
+        <p className="text-slate-400 mb-12 text-center">
+          Technology That I use to build web applications.
+        </p>
+
+        {/* Tombol Tab */}
+        <div className="flex space-x-4 md:space-x-8 border-b border-gray-700 mb-12">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`${
+                activeTab === tab.id
+                  ? "text-[#0B1120] font-bold"
+                  : "text-gray-500"
+              } relative rounded-md py-2.5 px-4 text-sm font-medium transition-colors duration-300 focus-visible:outline-2`}
+            >
+              {activeTab === tab.id && (
+                <motion.div
+                  layoutId="active-pill"
+                  className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-green-500"
+                  style={{ borderRadius: 8 }}
                 />
-              );
-            })}
-          </div>
-        );
-      case 2:
-        return (
-          <div className="grid lg:grid-cols-2 gap-10 md:w-[80%] w-full md:mx-auto">
-          {backend_data.map((item, index) => {
-            return (
+              )}
+              <span className="relative z-10">{tab.label}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Konten Skill dengan Animasi */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="grid md:grid-cols-2 gap-8 w-full lg:w-4/5"
+          >
+            {data.map((item, index) => (
               <SkillCard
                 key={index}
+                index={index}
                 src={item.src}
                 title={item.title}
                 level={item.level}
                 experience={item.experience}
               />
-            );
-          })}
-        </div>
-        );
-      default:
-        return null;
-    }
-  };
-
-  return (
-    <section className="text-gray-600 body-font bg-[#212121]" id="skill">
-      <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-        <div className="flex mx-auto flex-wrap mb-10 text-[#e7e7e7]">
-          <a
-            onClick={() => handleStepClick(1)}
-            className={`sm:px-6 px-10 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium ${
-              activeStep === 1
-                ? "bg-[#e7e7e7] border-gray-100 text-black cursor-pointer"
-                : "bg-black border-gray-100 hover:text-neutral-400 cursor-pointer"
-            } inline-flex items-center leading-none tracking-wider rounded-t`}
-          >
-            FRONTEND
-          </a>
-          <a
-            onClick={() => handleStepClick(2)}
-            className={`sm:px-6 px-10 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium ${
-              activeStep === 2
-                ? "bg-[#e7e7e7] border-gray-100 text-black cursor-pointer"
-                : "bg-[#0e0e0e] border-gray-100 hover:text-neutral-400 cursor-pointer"
-            } inline-flex items-center leading-none tracking-wider rounded-t`}
-          >
-            BACKEND
-          </a>
-        </div>
-        {renderStepContent()}
+            ))}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );

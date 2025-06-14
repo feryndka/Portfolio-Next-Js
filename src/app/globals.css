@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply bg-[#0e0e0e] text-[#e7e7e7]
+  @apply bg-[#0e0e0e] text-[#e7e7e7];
 }
 
 .shape-top {
@@ -29,3 +29,21 @@ body {
 .shape-top .shape-fill {
   fill: #212121;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Opsional: Import font JetBrains Mono */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");

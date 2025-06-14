@@ -4,15 +4,19 @@ import styled from "styled-components";
 import { projects } from "@/components/utils/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectDetails from "./ProjectDetails";
+import { motion, AnimatePresence } from "framer-motion";
+
+// --- Styled Components ---
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-padding: 70px 16px;
-align-items: center;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 80px 16px;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
@@ -22,21 +26,21 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
 `;
 
-const Title = styled.div`
-  font-size: 52px;
+const Title = styled.h2`
+  font-size: 42px;
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  /* Green Gradient Text */
+  background: linear-gradient(to right, #6ee7b7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   @media (max-width: 768px) {
-    margin-top: 12px;
     font-size: 32px;
   }
 `;
@@ -44,14 +48,44 @@ const Title = styled.div`
 const Desc = styled.div`
   font-size: 18px;
   text-align: center;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  max-width: 600px;
+  color: ${({ theme }) => theme.text_secondary || "#b1b2b3"};
+
   @media (max-width: 768px) {
     font-size: 16px;
   }
 `;
 
-const CardContainer = styled.div`
+const ToggleButtonGroup = styled.div`
+  display: flex;
+  border: 1.5px solid #3b82f6; /* Green Accent */
+  background-color: #1c1c27;
+  color: #3b82f6;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  margin: 22px 0;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+const ToggleButton = styled.div`
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+  ${({ active, theme }) =>
+    active &&
+    `
+    background: linear-gradient(to right, #6EE7B7, #3B82F6);
+    color: #0B1120;
+  `}
+`;
+
+const CardContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,47 +95,67 @@ const CardContainer = styled.div`
 
 const Project = () => {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
+  const [toggle, setToggle] = useState("all");
 
   return (
-    <Container id="project" className="relative">
+    <Container id="project">
       <Wrapper>
-        <Title>Projects</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
-          Here are some of my projects.
+        <Title>My Projects</Title>
+        <Desc>
+          Here are some of the projects I&apos;ve worked on, from web
+          applications to android applications.
         </Desc>
-        <CardContainer>
-          {projects.map((project, index) => {
-            return (
-              <ProjectCard
-                key={index}
-                project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            );
-          })}
+
+        <ToggleButtonGroup>
+          <ToggleButton
+            active={toggle === "all"}
+            onClick={() => setToggle("all")}
+          >
+            ALL
+          </ToggleButton>
+          <ToggleButton
+            active={toggle === "web app"}
+            onClick={() => setToggle("web app")}
+          >
+            WEB APP
+          </ToggleButton>
+          <ToggleButton
+            active={toggle === "android"}
+            onClick={() => setToggle("android")}
+          >
+            ANDROID
+          </ToggleButton>
+        </ToggleButtonGroup>
+
+        <CardContainer layout transition={{ duration: 0.4, ease: "easeInOut" }}>
+          <AnimatePresence>
+            {projects
+              .filter((item) => toggle === "all" || item.category === toggle)
+              .map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  layout
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  <ProjectCard
+                    project={project}
+                    openModal={openModal}
+                    setOpenModal={setOpenModal}
+                  />
+                </motion.div>
+              ))}
+          </AnimatePresence>
         </CardContainer>
-        {openModal.state && (
-          <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-        )}
+
+        <AnimatePresence>
+          {openModal.state && (
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          )}
+        </AnimatePresence>
       </Wrapper>
-      <div className="shape-top">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="shape-fill"
-          ></path>
-        </svg>
-      </div>
     </Container>
   );
 };
