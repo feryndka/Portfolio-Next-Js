@@ -6,6 +6,8 @@ import SkillCard from "./SkillCard";
 import frontend_data from "@/components/utils/frontend-data.json";
 import backend_data from "@/components/utils/backend-data.json";
 
+import { calculateExperience } from "@/components/utils/experienceCalculator";
+
 export default function Skill() {
   const [activeTab, setActiveTab] = useState(1);
 
@@ -68,7 +70,7 @@ export default function Skill() {
                 src={item.src}
                 title={item.title}
                 level={item.level}
-                experience={item.experience}
+                experience={calculateExperience(item.startDate)}
               />
             ))}
           </motion.div>

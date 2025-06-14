@@ -4,34 +4,34 @@
     "src": "/icon/JavaScript.png",
     "title": "Javascript",
     "level": "Intermediate",
-    "experience": "1 Year"
+    "startDate": "2023-10-01"
   },
   {
     "id": 2,
     "src": "/icon/typescript.png",
     "title": "Typescript",
     "level": "Beginner",
-    "experience": "6 Month"
+    "startDate": "2024-01-01"
   },
   {
     "id": 3,
     "src": "/icon/node.png",
     "title": "Node Js",
     "level": "Beginner",
-    "experience": "6 Month"
+    "startDate": "2024-01-01"
   },
   {
     "id": 4,
     "src": "/icon/express.png",
     "title": "Express Js",
     "level": "Intermediate",
-    "experience": "1 Year"
+    "startDate": "2024-01-01"
   },
   {
     "id": 5,
     "src": "/icon/laravel.jpg",
     "title": "Laravel",
-    "level": "Advanced",
-    "experience": "1 Year"
+    "level": "Intermediate",
+    "startDate": "2024-09-01"
   }
 ]

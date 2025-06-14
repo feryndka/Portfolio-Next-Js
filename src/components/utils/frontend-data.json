@@ -4,34 +4,41 @@
     "src": "/icon/JavaScript.png",
     "title": "Javascript",
     "level": "Intermediate",
-    "experience": "1 Year"
+    "startDate": "2023-10-01"
   },
   {
     "id": 2,
     "src": "/icon/react.png",
     "title": "React Js",
     "level": "Intermediate",
-    "experience": "1 Year"
+    "startDate": "2023-10-01"
   },
   {
     "id": 3,
     "src": "/icon/next.png",
     "title": "Next Js",
     "level": "Intermediate",
-    "experience": "1 Year"
+    "startDate": "2023-10-01"
   },
   {
     "id": 4,
     "src": "/icon/html.png",
     "title": "HTML",
     "level": "Advanced",
-    "experience": "2 Years"
+    "startDate": "2022-07-01"
   },
   {
     "id": 5,
     "src": "/icon/css.png",
     "title": "CSS",
     "level": "Advanced",
-    "experience": "2 Years"
+    "startDate": "2022-07-01"
+  },
+  {
+    "id": 6,
+    "src": "/icon/flutter.webp",
+    "title": "Flutter",
+    "level": "Beginner",
+    "startDate": "2025-01-01"
   }
 ]
