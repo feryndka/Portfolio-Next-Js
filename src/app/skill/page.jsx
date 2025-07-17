@@ -26,11 +26,11 @@ export default function Skill() {
           My Tech Stack
         </h2>
         <p className="text-slate-400 mb-12 text-center">
-          Technology That I use to build web applications.
+          Technology that I use to build web applications.
         </p>
 
         {/* Tombol Tab */}
-        <div className="flex space-x-4 md:space-x-8 border-b border-gray-700 mb-12">
+        <div className="flex border border-emerald-400 mb-12 rounded-xl">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -38,7 +38,7 @@ export default function Skill() {
               className={`${
                 activeTab === tab.id
                   ? "text-[#0B1120] font-bold"
-                  : "text-gray-500"
+                  : "text-emerald-400"
               } relative rounded-md py-2.5 px-4 text-sm font-medium transition-colors duration-300 focus-visible:outline-2`}
             >
               {activeTab === tab.id && (

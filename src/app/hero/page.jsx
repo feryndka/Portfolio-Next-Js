@@ -2,10 +2,10 @@ import Particle from "@/components/particle";
 import Link from "next/link";
 import React from "react";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Typography } from "@mui/material";
+import DownloadIcon from "@mui/icons-material/Download";
 
 const Hero = () => {
   const socials = [
@@ -39,7 +39,6 @@ const Hero = () => {
             fontSize: { xs: "2.5rem", md: "4rem", lg: "5rem" },
             fontWeight: "bold",
             fontFamily: "'JetBrains Mono', monospace",
-            letterSpacing: "-0.05em",
             background: "linear-gradient(to right, #6EE7B7, #3B82F6)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -67,15 +66,20 @@ const Hero = () => {
         className="z-10 mt-8 flex flex-col sm:flex-row items-center gap-6 animate-fadeInUp" // Sedikit menambah gap
         style={{ animationDelay: "0.6s" }}
       >
-        <Link
-          href="#about"
+        {/* --- TOMBOL DOWNLOAD CV --- */}
+        <a
+          href="/CV_Fery_Andika.pdf" // Pastikan nama file ini sama dengan file yang ada di folder public
+          download="CV_Fery_Andika.pdf" // Nama file yang akan di-download pengguna
+          target="_blank"
+          rel="noopener noreferrer"
           className="group relative flex justify-center items-center w-48 h-12 rounded-lg text-sm font-bold transition-all duration-300 
                      bg-gradient-to-r from-[#6EE7B7] to-blue-500 text-[#0B1120]
                      shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/50 hover:scale-105"
         >
-          <span>Discover More</span>
-          <ArrowForwardIcon className="ml-2 transform transition-transform group-hover:translate-x-1" />
-        </Link>
+          <span>Download CV</span>
+          <DownloadIcon className="ml-2 transform transition-transform group-hover:translate-y-0.5" />
+        </a>
+
         <div className="flex flex-row gap-4">
           {socials.map((social) => (
             // Wrapper untuk border gradien
